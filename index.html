@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<meta charset="utf-8"/>
+</head>
+<style type="text/css">
+	body{
+		padding:0px;
+		margin:0px;
+	}
+	.container{
+		max-width:1000px;
+		margin:0 auto;
+	}
+	.container > header{
+		height/width=1/4;
+		background-image:url('images/poly.png');
+		background-size:100% 100%;
+		height:0px;
+		padding-bottom:25%;
+	}
+	.container > nav{
+		line-height:40px;
+		background-color:orangered;
+		color:white;
+		text-align:center;
+		font-variant:small-caps;
+	}
+	.container > article{
+		min-height:400px;
+		width:75%;
+		background-color:lightgray;
+		float:right;
+	}
+	.container > aside{
+		min-height:400px;
+		width:25%;
+		background-color:lightgray;
+		float:right;
+	}
+	.container > footer{
+		border-top:5px double orangered;
+		line-height:50px;
+		background-color:lightcyan;
+		text-align:center;
+		font-variant:small-caps;
+		clear:both;
+	}
+	.container > nav > a{
+		color:white;
+		text-decoration:none;
+		margin:0 10px;
+	}
+	.container > nav > a:hover{
+		color:yellow;
+		text-decoration:underline;
+	}
+	img{
+		width:100%;
+		min-height:400px;
+	}
+	.vmenu{
+		padding:0px;
+		margin:5px;
+		list-style:none;
+		border-radius:3px;
+		box-shadow:0 0 3px gray;
+	}
+	.vmenu a{
+		display:block;
+		border-bottom:1px dotted orangered;
+		color:orangered;
+		font-variant:small-caps;
+		font-size:larger;
+		text-decoration:none;
+		padding:8px 5px 8px 30px;
+	}
+	.vmenu a:hover{
+		border-bottom:1px dotted white;
+		background-color:orangered;
+		color:white;
+		font-weight:bold;
+	}
+</style>
+<body>
+	<div class="container">
+		<header></header>
+		<nav>
+				<a href="#">HOME</a>
+				<a href="#">INTRODUCTION</a>
+				<a href="#">CONTACT</a>
+				<a href="#">DISTRIBUTION</a>
+				<a href="#">QUESTIONS AND ANSWERS</a>
+		</nav>
+		<article>
+			<img src="images/Student.jpg">
+		</article>
+		<aside>
+			<ul class="vmenu">
+				<li><a href="#">Latop</a></li>
+				<li><a href="#">Cellphone</a></li>
+				<li><a href="#">Camcorder</a></li>
+				<li><a href="#">Camera</a></li>
+				<li><a href="#">Refrigerator</a></li>
+				<li><a href="#">Watch</a></li>
+				<li><a href="#">Clock</a></li>
+				<li><a href="#">Washing machine</a></li>
+				<li><a href="#">Iron</a></li>
+				<li><a href="#">Motorcycle</a></li>
+				<li><a href="#">Bicycle</a></li>
+				<li><a href="#">Soap</a></li>
+			</ul>
+		</aside>
+		<footer>FPT Polytechnic © 2017. All rights reserved.</footer>
+	</div>
+</body>
+</html>
